@@ -11,7 +11,7 @@ bool isFull(const arraylist *list)
 
 bool isEmpty(const arraylist *list)
 {
-	return list->tail + 1 == list->front? true : false; //test to see whether the array list is full 
+	return list->tail == list->front? true : false; //test to see whether the array list is full 
 }
 
 void display(const arraylist *list)
