@@ -1,8 +1,11 @@
+//Created by Romario Newell
+//A linked list representation of a stack is used here.  
+
+
 #ifndef LISTSTACK_H_ 
 #define LISTSTACK_H_
 #include <stdbool.h>
 
-//A linked list representation of a stack is used here. 
 
 typedef struct node
 {
