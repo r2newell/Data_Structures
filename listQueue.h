@@ -18,6 +18,5 @@ bool isEmpty(const queue *);
 bool enqueue(queue *, int); //returns true upon successful insertion 
 bool dequeue(queue *, int *);//returns true upon successful deletion
 bool initializeQueue(queue *);//returns true upon succesful initialization 
-void display(const queue *); //only for debugging reason
 void destroy(queue *); 
 #endif
