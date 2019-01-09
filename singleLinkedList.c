@@ -1,3 +1,6 @@
+//Created by Romario Newell 
+//Linked list implementation of a list
+
 #include "singlelinkList.h"
 #include <stdlib.h> 
 #include <stdio.h> 
