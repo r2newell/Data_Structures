@@ -16,7 +16,7 @@ bool isEmpty(const queue*);
 bool	isFull(const queue*); 
 void enqueue(queue *, int); 
 void dequeue(queue *, int *);
-int	initializeQueue(queue*, int);//initialize queue to a specified size and returns zero if successful
+int initializeQueue(queue*, int);//initialize queue to a specified size and returns zero if successful
 void freeQueue(queue*);// free memory used by queue
 void display(const queue*); 
 #endif
