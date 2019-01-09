@@ -1,4 +1,5 @@
 //Created by Romario Newell
+//Simple array implementation of a queue
 
 #ifndef QUEUE_H_
 #define QUEUE_H_ 
@@ -13,7 +14,7 @@ typedef struct queue
 }queue; 
 
 bool isEmpty(const queue*); 
-bool	isFull(const queue*); 
+bool isFull(const queue*); 
 void enqueue(queue *, int); 
 void dequeue(queue *, int *);
 int initializeQueue(queue*, int);//initialize queue to a specified size and returns zero if successful
