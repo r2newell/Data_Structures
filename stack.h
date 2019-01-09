@@ -1,3 +1,6 @@
+//Created by Romario Newell 
+//Array based implementation of a stack 
+
 #ifndef STACK_H_
 #define STACK_H_ 
 #include <stdbool.h> 
