@@ -1,3 +1,6 @@
+//Created by Romario Newell 
+//Simple Linked list implementation of a stack
+
 #include "listStack.h"
 #include <stdlib.h> 
 #include <stdio.h>
