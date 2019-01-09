@@ -1,3 +1,5 @@
+//Created by Romario Newell
+//Simple Linked list implementation of a queue 
 #ifndef LISTQUEUE_H_ 
 #define LISTQUEUE_H_
 #include <stdbool.h> 
