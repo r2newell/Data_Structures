@@ -1,3 +1,6 @@
+//Created by Romario Newell 
+//Simple linked list implementation of a queue.
+
 #include "listQueue.h"
 #include <stdlib.h> 
 #include <stdio.h> 
