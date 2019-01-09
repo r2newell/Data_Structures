@@ -1,3 +1,6 @@
+//Creatd by Romario Newell 
+//Linked list implementation of a list
+
 #ifndef SINGLE_LINKED_LIST_H_
 #define SINGLE_LINKED_LIST_H_ 
 #include <stdbool.h> 
@@ -23,7 +26,7 @@ node *first(const list *); //returns the first node within the linked list
 node *last(const list *); //returns the last node within the linked list
 bool insertAfter(list *, node*, int); //insert a node after a node p
 node *search(const list *, int); //search for a node
-node **predecessor(const list*, const node *); //finds the predecessor of a node
+node **predecessor(const list*, const node *); //finds the predecessor of a node. In this case predecessor is the previous node.
 bool remove(list *, node *); //removes a node. Returns true upon successful removal
 void initializeList(list *); // initialize list. Call after creation of list 
 void display(const list *); 
