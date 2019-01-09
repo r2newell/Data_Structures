@@ -50,13 +50,6 @@ void freeQueue(queue *list)
 	list->front = list->tail = 0;  
 }
 
-void display(const queue *list)
-{
-	for(int start = list->front, end = list->tail;start < end; start++)
-		   printf(" %d",list->seq[start]);
-	printf("\n");
-}
-
 int initializeQueue(queue*list, int size)
 {
 	   list->size = size; 
