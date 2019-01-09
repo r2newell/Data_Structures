@@ -1,3 +1,6 @@
+//Created by Romario Newell 
+//Simple array implementation of a stack 
+
 #include "stack.h"
 #include "utility.h"
 #include <stdio.h>
