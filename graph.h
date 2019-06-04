@@ -1,5 +1,5 @@
-#ifndef PATHS_H_
-#define PATHS_H_ 
+#ifndef GRAPHS_H_
+#define GRAPHS_H_ 
 #define MAX 1000
 #define PARENT(x) ((x)/2)
 #define LEFT(x) ((((x)) * 2) + 1)
@@ -145,5 +145,4 @@ void   relax(int, int, double);//relaxation
 void   initializeShortest(graph *, int);//initializes graph for shortest path 
 void   longest_Path(graph *, const char *);//longest path
 deque  *cpm(graph *);//finds the critical path
-
 #endif
