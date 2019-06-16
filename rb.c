@@ -1,25 +1,8 @@
 #include "rb.h"
 #include <stdlib.h>
 #include <stdio.h> 
-int main()
-{
-    int counter = 0;
-    Tree rb; 
-    initializeTree(&rb);
-    insert(&rb, 9);  
-    insert(&rb, 10); 
-    insert(&rb, 11);
-    insert(&rb, 12);
-    inorder(rb.root); 
-    printf("\nRoot size: %d\n", rb.root->size); 
-    printf("\n");
-    node *temp = select_node(rb.root, 4);
-    if(temp)
-            printf("\n %d\n", temp->key); 
-    clear_tree(rb.root); 
-    return 0;
-}
 
+/*An efficient implementation of a red and black tree that uses bottom up insertion and top down deletion.*/
 bool isTreeEmpty(const Tree *rb)
 {
     return rb->root? false : true; 
@@ -327,34 +310,6 @@ node *predecessor(node *root)
 
 }
 
-node *select_node(const node *root, int rank)
-{
-
-        int node_rank = 0;
-        node *current = NULL;
-        while(root != NULL)
-        {
-            node_rank = root->size + 1;
-            current = root->left;
-            if(current != NULL)
-                   node_rank = current->size + 2;
-            if(rank == node_rank) 
-                    break;
-            if(rank < node_rank)
-                    
-            {
-                    root = root->left; 
-                    node_rank--;
-            }
-            else   
-            {
-                    root = root->right;
-                    rank -= node_rank;
-            }
-        } 
-    
-        return root; 
-}
 
 void leftRotation(Tree *rb, node *root)
 {
